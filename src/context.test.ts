@@ -1,6 +1,6 @@
 import { beforeEach, describe, it } from 'node:test';
 import assert from 'node:assert';
-import { Context } from './context';
+import { ParserStrategyContext } from './context';
 import { Match } from './types';
 
 export const matches = [

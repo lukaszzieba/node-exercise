@@ -1,20 +1,17 @@
-import { Context } from './src/context';
+import { ParserStrategyContext } from './src/context';
 import { matches } from './src/data';
-import { Match } from './src/types';
 
 class Program {
-  data: Match[];
-  ctx: Context;
+  ctx: ParserStrategyContext;
 
-  constructor(matches: Match[]) {
-    this.data = matches;
-    this.ctx = new Context();
+  constructor() {
+    this.ctx = new ParserStrategyContext();
   }
 
   main() {
-    const parsed = this.ctx.parse(this.data);
+    const parsed = this.ctx.parse(matches);
     console.log(parsed);
   }
 }
 
-new Program(matches).main();
+new Program().main();

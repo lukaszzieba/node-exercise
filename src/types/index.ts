@@ -1,4 +1,3 @@
-
 export type Sport = 'soccer' | 'volleyball' | 'handball' | 'basketball' | 'tennis';
 
 export interface Match {
@@ -21,4 +20,4 @@ export interface Parsed {
 export const INVALID_SPORT = 'Invalid sport';
 export const INVALID_SCORE_TYPE = 'Invalid score type';
 
-export const isString = (value: any): value is string => typeof value === 'string'
+export const isString = (value: any): value is string => typeof value === 'string';

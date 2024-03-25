@@ -4,7 +4,7 @@ import { INVALID_SPORT, Match, Parsed } from './types';
 const filterFn = ({ name, score }: Parsed) =>
   !name.includes(INVALID_SPORT) && name !== '' && score !== '';
 
-export class Context {
+export class ParserStrategyContext {
   private parserFactory: ParserFactory;
 
   constructor() {

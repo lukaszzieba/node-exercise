@@ -1,4 +1,4 @@
-import { EventParser, INVALID_SPORT, Match } from "../types";
+import { EventParser, INVALID_SPORT, Match } from '../types';
 
 export class DefaultParser implements EventParser {
   makeEventName(match: Match): string {
@@ -9,4 +9,3 @@ export class DefaultParser implements EventParser {
     return `${INVALID_SPORT}: ${match.sport}`;
   }
 }
-

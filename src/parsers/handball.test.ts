@@ -29,6 +29,6 @@ describe('Handball parser', () => {
 
   it('should throw error when score type is invalid', () => {
     const err = new Error(INVALID_SCORE_TYPE);
-    assert.throws(() => parser.formatScore({ ...match, score: undefined }), err);
+    assert.throws(() => parser.formatScore({ ...match, score: [] }), err);
   });
 });

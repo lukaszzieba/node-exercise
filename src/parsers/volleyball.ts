@@ -32,6 +32,6 @@ export class VolleyballParser implements EventParser {
       }
     }
 
-    throw new Error(INVALID_SCORE_TYPE)
+    throw new Error(INVALID_SCORE_TYPE);
   }
 }

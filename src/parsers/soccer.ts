@@ -7,9 +7,9 @@ export class SoccerParser implements EventParser {
 
   formatScore(match: Match): string {
     if (isString(match.score)) {
-      return match.score
+      return match.score;
     }
 
-    throw new Error(INVALID_SCORE_TYPE)
+    throw new Error(INVALID_SCORE_TYPE);
   }
 }
